@@ -1,10 +1,8 @@
-# `ANY-NODE` ZINIT PACKAGE
-
 | **Package source:** | Source Tarball | Binary |       Git        | Node | Gem |
 |:-------------------:|:--------------:|:------:|:----------------:|:----:|:---:|
 |     **Status:**     |       -        |   -    | + <br> (default) |  -   |  -  |
 
-## Introduction
+# Introduction
 
 [Zinit](https://github.com/z-shell/zinit) can use the NPM package registry
 to automatically:
