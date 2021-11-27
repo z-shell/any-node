@@ -17,7 +17,7 @@
   "_requiredBy": [],
   "_spec": "any-node@^1.0.0",
   "_where": "/root/github2/pkg-any-node",
-  "author": "Sebastian Gniazdowski",
+  "author": "Z-Shell ZI",
   "bugs": {
     "url": "https://github.com/z-shell/any-node/issues"
   },
@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/z-shell/any-node",
   "keywords": [
-    "zinit-package",
+    "zi-package",
     "npm wrapper",
     "zsh"
   ],
@@ -45,7 +45,7 @@
       "version": "1.0.0",
       "requires": "npm;bgn"
     },
-    "zplugin-ices": {
+    "zi-ices": {
       "default": {
         "git": "",
         "lucid": "",
