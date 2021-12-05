@@ -6,7 +6,7 @@
 
 </h3>
 
-# Introduction
+## Introduction
 
 > **[?]**
 > This repository not compatible with previous versions (zplugin, zinit).
@@ -16,11 +16,11 @@
 [ZI](https://github.com/z-shell/zi) can use the NPM package registry
 to automatically:
 
--   get the plugin's Git repository OR release-package URL,
--   get the list of the recommended ices for the plugin,
-    -   there can be multiple lists of ices,
-    -   the ice lists are stored in _profiles_; there's at least one profile, _default_,
-    -   the ices can be selectively overridden.
+- get the plugin's Git repository OR release-package URL,
+- get the list of the recommended ices for the plugin,
+  - there can be multiple lists of ices,
+  - the ice lists are stored in _profiles_; there's at least one profile, _default_,
+  - the ices can be selectively overridden.
 
 ## The `any-node` Package
 
