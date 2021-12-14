@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/z-shell/any-node",
   "keywords": [
-    "zi-package",
+    "zpackage",
     "npm wrapper",
     "zsh"
   ],
