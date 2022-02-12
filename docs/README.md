@@ -15,10 +15,7 @@
 
 ## Introduction
 
-> **[?]**
-> This repository not compatible with previous versions (zplugin, zinit).
->
-> Please upgrade to [ZI](https://github.com/z-shell-zi)
+> This repository compatible with [ZI](https://github.com/z-shell-zi)
 
 [ZI](https://github.com/z-shell/zi) can use the NPM package registry
 to automatically:
@@ -29,7 +26,7 @@ to automatically:
   - the ice lists are stored in _profiles_; there's at least one profile, _default_,
   - the ices can be selectively overridden.
 
-## The `any-node` Package
+## The `any-node` package
 
 This package is special – it is designed for easy installing of any Node modules inside the plugin directory,
 exposing their binaries via _shims_ (i.e.: forwarder scripts) created automatically by [Bin-Gem-Node](https://github.com/z-shell/z-a-bin-gem-node) annex.
@@ -50,7 +47,7 @@ zi id-as=remark pack param='MOD → remark-man; MOD2 → remark-cli' for any-nod
 zi pack param='IDAS → my-pen; MOD → pen' for any-node
 ```
 
-## Default Profile
+## Default profile
 
 The only profile that does all the magic. It relies on the `%PARAM%` keywords,
 which are substituted with the `value` from the ice `param'PARAM → value; …'`.
