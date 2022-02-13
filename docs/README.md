@@ -1,6 +1,6 @@
 <h2 align="center">
   <a href="https://github.com/z-shell/zi">
-    <img src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="80" height="80">
+    <img src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="80" height="80" />
   </a>
 ❮ ZI ❯ Special Package - Any Node
 </h2>
@@ -13,12 +13,9 @@
 
 </h3>
 
-## Introduction
+> This repository compatible with [ZI](https://github.com/z-shell/zi)
 
-> This repository compatible with [ZI](https://github.com/z-shell-zi)
-
-[ZI](https://github.com/z-shell/zi) can use the NPM package registry
-to automatically:
+[ZI](https://github.com/z-shell/zi) can use the NPM package registry to automatically:
 
 - get the plugin's Git repository OR release-package URL,
 - get the list of the recommended ices for the plugin,
