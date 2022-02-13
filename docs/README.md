@@ -2,7 +2,7 @@
   <a href="https://github.com/z-shell/zi">
     <img src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="80" height="80">
   </a>
-❮ ZI ❯ Package - Any Node
+❮ ZI ❯ Special Package - Any Node
 </h2>
 
 <h3 align="center">
