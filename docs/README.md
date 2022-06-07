@@ -1,27 +1,14 @@
-<h2 align="center">
-  <a href="https://github.com/z-shell/zi">
-    <img src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="80" height="80" />
-  </a>
-❮ ZI ❯ Special Package - Any Node
-</h2>
-
+<div align="center">
+<h1><a href="https://github.com/z-shell/zi">
+<img src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="60px" height="60px" /></a>
+  ❮ ZI ❯ Special Package - Any Node </h1>
 <h3 align="center">
 
 | **Package source:** | Source Tarball | Binary |             Git              | Node | Gem |
 | :-----------------: | :------------: | :----: | :--------------------------: | :--: | :-: |
 |     **Status:**     |      :x:       |  :x:   | :heavy_check_mark: (default) | :x:  | :x: |
 
-</h3>
-
-> This repository compatible with [ZI](https://github.com/z-shell/zi)
-
-[ZI](https://github.com/z-shell/zi) can use the NPM package registry to automatically:
-
-- get the plugin's Git repository OR release-package URL,
-- get the list of the recommended ices for the plugin,
-  - there can be multiple lists of ices,
-  - the ice lists are stored in _profiles_; there's at least one profile, _default_,
-  - the ices can be selectively overridden.
+</h3></div><hr />
 
 ## The `any-node` package
 
@@ -33,29 +20,42 @@ The name of the plugin will be `{module1}`, unless `id-as''` ice will be provide
 
 A few example invocations:
 
-```zsh
+```shell
 # Install `coffee-script' module and call the plugin with the same name
 zi pack param='MOD → coffee-script' for any-node
+```
 
+```shell
 # Install `remark' Markdown processor and call the plugin: remark
 zi id-as=remark pack param='MOD → remark-man; MOD2 → remark-cli' for any-node
+```
 
+```shell
 # Install `pen' Markdown previewer and call the plugin: my-pen
 zi pack param='IDAS → my-pen; MOD → pen' for any-node
 ```
 
 ## Default profile
 
-The only profile that does all the magic. It relies on the `%PARAM%` keywords,
-which are substituted with the `value` from the ice `param'PARAM → value; …'`.
+The only profile that does all the magic. It relies on the `%PARAM%` keywords, which are substituted with the `value` from the ice `param'PARAM → value; …'`.
 
 The ZI command executed will be equivalent to:
 
-```zsh
+```shell
 zi lucid id-as="${${:-%IDAS%}:-%MOD%}" as=null \
-    node="%MOD%;%MOD2%;%MOD3%;%MOD4%;%MOD5%;%MOD6%;%MOD7%;%OTHER%" \
-    sbin="n:node_modules/.bin/*" for \
-        z-shell/null
+  node="%MOD%;%MOD2%;%MOD3%;%MOD4%;%MOD5%;%MOD6%;%MOD7%;%OTHER%" \
+  sbin="n:node_modules/.bin/*" for \
+    z-shell/null
 ```
 
-The package is thus a simplifier of ZI commands.
+---
+
+> This repository compatible with [ZI](https://github.com/z-shell/zi)
+
+[ZI](https://github.com/z-shell/zi) can use the [zsh-string-lib](https://github.com/z-shell/zsh-string-lib) to automatically:
+
+- get the plugin's Git repository OR release-package URL,
+- get the list of the recommended ices for the plugin,
+  - there can be multiple lists of ices,
+  - the ice lists are stored in _profiles_; there's at least one profile, _default_,
+  - the ices can be selectively overridden.
