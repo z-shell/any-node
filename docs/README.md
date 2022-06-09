@@ -1,22 +1,33 @@
-<div align="center">
-<h1><a href="https://github.com/z-shell/zi">
-<img src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="60px" height="60px" /></a>
-  ❮ ZI ❯ Special Package - Any Node </h1>
+<h1 align="center">
+  <a href="https://github.com/z-shell/zi">
+    <p><img src="https://github.com/z-shell/zi/raw/main/docs/images/logo.svg" alt="Logo" width="60px" height="60px" /></a>
+  ❮ ZI ❯ Special Package - Any Node </p>
+</h1>
 <h3 align="center">
-
-| **Package source:** | Source Tarball | Binary |             Git              | Node | Gem |
-| :-----------------: | :------------: | :----: | :--------------------------: | :--: | :-: |
-|     **Status:**     |      :x:       |  :x:   | :heavy_check_mark: (default) | :x:  | :x: |
-
-</h3></div><hr />
+<table>
+    <tr>
+        <td><b>Package source:</b></td>
+        <td>Source Tarball</td>
+        <td>Binary</td>
+        <td>Git</td>
+        <td>Node</td>
+        <td>Gem</td>
+    </tr>
+    <tr>
+        <td><b>Status:</b></td>
+        <td>❌</td>
+        <td>❌</td>
+        <td>✔️ (default)</td>
+        <td>❌</td>
+        <td>❌</td>
+    </tr>
+</table></h3><hr />
 
 ## The `any-node` package
 
-This package is special – it is designed for easy installing of any Node modules inside the plugin directory,
-exposing their binaries via _shims_ (i.e.: forwarder scripts) created automatically by [Bin-Gem-Node](https://github.com/z-shell/z-a-bin-gem-node) annex.
+This package is special – it is designed for easy installing of any Node modules inside the plugin directory, exposing their binaries via _shims_ (i.e.: forwarder scripts) created automatically by [Bin-Gem-Node](https://github.com/z-shell/z-a-bin-gem-node) annex.
 
-The Node module(s) to install are specified by the `param'MOD → {module1}; MOD2 → {module2}; …'` ice.
-The name of the plugin will be `{module1}`, unless `id-as''` ice will be provided, or the `IDAS` param will be set (i.e.: `param'IDAS → my-plugin; MOD → …'`).
+The Node module(s) to install are specified by the `param'MOD → {module1}; MOD2 → {module2}; …'` ice. The name of the plugin will be `{module1}`, unless `id-as''` ice will be provided, or the `IDAS` param will be set (i.e.: `param'IDAS → my-plugin; MOD → …'`).
 
 A few example invocations:
 
@@ -52,7 +63,7 @@ zi lucid id-as="${${:-%IDAS%}:-%MOD%}" as=null \
 
 > This repository compatible with [ZI](https://github.com/z-shell/zi)
 
-[ZI](https://github.com/z-shell/zi) can use the [zsh-string-lib](https://github.com/z-shell/zsh-string-lib) to automatically:
+The [ZI](https://github.com/z-shell/zi) package that uses the [zsh-string-lib](https://github.com/z-shell/zsh-string-lib) to automatically:
 
 - get the plugin's Git repository OR release-package URL,
 - get the list of the recommended ices for the plugin,
